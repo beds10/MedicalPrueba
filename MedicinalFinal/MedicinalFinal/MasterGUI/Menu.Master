@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="MedicinalFinal.MasterGUI.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="../Styles/Menu.css" rel="stylesheet" />
+
+    <title> Consumo de API</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Titulo inicio -->
+  <a class="navbar-brand" href="../GUI/Inicio.aspx">Medical Express</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+         <!-- Productos -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Productos.aspx">Productos</a>
+      </li>
+        <!-- Categorias -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Categorias.aspx">Categorias</a>
+      </li>
+        <!-- Pagos con paypal -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Pagos.aspx">Pagos</a>
+      </li>
+        <!--Usuario -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Usuario.aspx">Usuario</a>
+      </li>
+        <!-- Tipo de usuario -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/TiposUsuarios.aspx">Tipo de Usuario</a>
+      </li>
+        <!--  Farmacia-->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Farmacias.aspx">Farmacia</a>
+      </li>
+        <!--  Modo de pago-->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/ModoPago.aspx">Modo de pago</a>
+      </li>
+
+          <!--Estatus -->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Estatus.aspx">Estatus</a>
+      </li>
+          <!--Foto de usuario-->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/FotosUsuario.aspx">Fotos</a>
+      </li>
+          <!--Pedidos-->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Pedidos.aspx">Pedidos</a>
+      </li>
+          <!--Detalles-->
+      <li class="nav-item">
+        <a class="nav-link" href="../GUI/Detalles.aspx">Detalles</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </div>
+  </div>
+</nav>
+
+             <!-- Contenido -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+</body>
+</html>
